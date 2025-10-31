@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAFFY STATION</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-content">
+        <nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <header>
+                <h1>🐾 STAFFY STATION 🐾</h1>
+            </header>
+            <div class="translate-controls">
+                <label for="language-selector">Language:</label>
+                <select id="language-selector" aria-label="Select language"></select>
+            </div>
+        </nav>
+        
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="share.html">Share your story</a></li>
+                <li><a href="policies.html">Policies</a></li>
+            </ul>
+        </div>
+        
+        <!-- Slideshow Section -->
+        <main class="content-wrapper">
+            <section class="slideshow-wrapper">
+                <button class="slide-btn slide-btn-left" id="prevBtn" aria-label="Previous image">❮</button>
+
+                <div class="slideshow-container" id="slideshow" aria-live="polite">
+                    <!-- Slides will be injected here by script.js -->
+                </div>
+
+                <button class="slide-btn slide-btn-right" id="nextBtn" aria-label="Next image">❯</button>
+            </section>
+        </main>
+    <footer>
+        <p>WEB DEVELOPMENT</p>
+        <p>Euan Kilbane</p>
+        <p>2025001928</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="slideshow.js"></script>
+    <script src="translate.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

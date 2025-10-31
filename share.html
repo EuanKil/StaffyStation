@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAFFY STATION</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-content">
+        <nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <header>
+                <h1>🐾 STAFFY STATION 🐾</h1>
+            </header>
+            <div class="translate-controls">
+                <label for="language-selector">Language:</label>
+                <select id="language-selector" aria-label="Select language"></select>
+            </div>
+        </nav>
+        
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="share.html">Share your story</a></li>
+                <li><a href="policies.html">Policies</a></li>
+            </ul>
+        </div>
+    
+        <main class="content">
+            <section class="share-container">
+                <h2>Share Your Story</h2>
+                <p>Have a Staffy story, fact, or tip to help others? Fill in the form below and add some photos!</p>
+
+                <form id="share-form" enctype="multipart/form-data" novalidate>
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="ownerName">Your Name</label>
+                            <input type="text" id="ownerName" name="ownerName" placeholder="e.g., Alex Smith" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="e.g., 07123 456789" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="dogName">Dog's Name</label>
+                            <input type="text" id="dogName" name="dogName" placeholder="e.g., Bella" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="age">Dog's Age (years)</label>
+                            <input type="number" id="age" name="age" min="0" max="30" step="1" placeholder="e.g., 4" required>
+                        </div>
+
+                        <div class="form-field full">
+                            <label for="breed">Breed</label>
+                            <input type="text" id="breed" name="breed" placeholder="e.g., Staffordshire Bull Terrier" required>
+                        </div>
+
+                        <div class="form-field full">
+                            <label for="story">Your Story / Info</label>
+                            <textarea id="story" name="story" rows="6" placeholder="Write your story, facts, or useful info here..." required></textarea>
+                        </div>
+
+                        <div class="form-field full">
+                            <label for="photos">Add Photos</label>
+                            <input type="file" id="photos" name="photos" accept="image/*" multiple>
+                            <small>You can select multiple images.</small>
+                            <div id="photo-preview" class="photo-preview"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary">Share Story</button>
+                        <button type="reset" class="btn">Clear</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="stories-list" id="stories-list-section">
+                <h2>Community Stories</h2>
+                <div id="stories-list" class="cards"></div>
+            </section>
+        </main>
+    
+            
+    <footer>
+        <p>WEB DEVELOPMENT</p>
+        <p>Euan Kilbane</p>
+        <p>2025001928</p>
+    </footer>
+        <script src="share.js"></script>
+    <script src="script.js"></script>
+    <script src="translate.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
